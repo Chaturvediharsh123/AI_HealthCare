@@ -1,8 +1,11 @@
-def analyze_risks(values):
+
+def risk_analyzer(values):
 
     risks = []
 
-    if values.get("glucose",0) > 140:
+    for value in values:
+         
+     if values.get("glucose",0) > 140:
         risks.append("Possible diabetes risk")
 
     if values.get("cholesterol",0) > 200:
